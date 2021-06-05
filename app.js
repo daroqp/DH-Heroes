@@ -5,7 +5,8 @@ const app = express();
 
 
 app.get('/', (req, res) => {
-	res.send('Server on')
+	const htmlPath = path.resolve(__dirname, './views/index.html');
+	res.sendFile(htmlPath);
 });
 
 
