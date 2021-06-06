@@ -1,3 +1,8 @@
 body {
-	background-color: rgb(red, green, blue);
- }
+	background-color: #D6EAF8;
+	text-align: center;
+}
+
+article {
+	display: inline-block;
+}

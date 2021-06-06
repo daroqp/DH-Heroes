@@ -3,7 +3,8 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static('public'));
+//app.use(express.static('public'));
+app.use('/static', express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
 	const htmlPath = path.resolve(__dirname, './views/index.html');
